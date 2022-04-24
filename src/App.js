@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { animateScroll as scroll } from "react-scroll";
 import Nav from "./Nav";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 import ScrollToTop from "./ScrollToTop";
 import Home from "./Home";
@@ -13,7 +14,7 @@ function App() {
   const [dropDownVisible, setDropDownVisible] = useState(false);
 
   return (
-    <BrowserRouter>
+    <Router>
       <ScrollToTop>
         <div className="App">
           <Routes>
@@ -38,7 +39,7 @@ function App() {
           </Routes>
         </div>
       </ScrollToTop>
-    </BrowserRouter>
+    </Router>
   );
 }
 
