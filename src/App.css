@@ -1,6 +1,110 @@
-.App {
-  text-align: center;
-  background-color: #282c34;
-  color: whitesmoke;
-  height: 100vh;
+/* look into garamond, freight text, tiempos text, gt sectra  */
+/* Look into futura, open sans, proxima nova, avenir,brandon grotesque, graphik */
+/* base reset so that I can set the padding and margins*/
+/* Generally, I'll make 
+  padding- 10px 15px
+  and margin - 20px */
+* {
+  margin: 0;
+  padding: 0;
+  /* max-width: 2000px; */
 }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Setting the base properties for the entire page */
+/* box-sizing so that everything will contain its internal elements*/
+html,
+body {
+  background-color: #1e1e1e;
+  color: #191919;
+  font-size: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin-left: auto;
+  margin-right: auto;
+  /*This will make it so when you click on a link, 
+    it will scroll to that spot rather than jump*/
+}
+
+.nav {
+  padding: 10px 15px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #1e1e1e;
+  z-index: 500;
+  /*This makes sure that the nav is always visible on top of any other element*/
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/*------ Navbar CSS------ */
+nav a {
+  text-decoration: none;
+  color: #f2f2f3;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: #43b1b9;
+}
+
+nav #left-nav,
+nav #right-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav #left-nav {
+  padding-left: 1rem;
+}
+
+nav #right-nav {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 45vw;
+}
+
+nav .fas {
+  color: #f2f2f3;
+  background-color: #1e1e1e;
+}
+
+nav #dropdown-button {
+  color: #f2f2f3;
+  background-color: #1e1e1e;
+  padding: 0 1rem;
+  border: none;
+  display: none;
+}
+
+.about,
+.home {
+  color: white;
+}
+/*# sourceMappingURL=App.css.map */
