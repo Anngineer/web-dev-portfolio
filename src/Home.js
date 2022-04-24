@@ -103,13 +103,94 @@ const Home = ({ dropDownVisible, setDropDownVisible }) => {
               </div>
 
               {/* Item 3 */}
-              <div className="grid-item-3"></div>
+              <div className="grid-item-3">
+                <a href={"https://anngineer.github.io/forest-friend-journal/"}>
+                  <article className="portfolio-example">
+                    <img
+                      src={forestfriend1}
+                      className="hide-on-hover"
+                      alt="preview of journal webpage showing an illustration of a fox reading a book"
+                    />
+                    <img
+                      src={forestfriend2}
+                      className="show-on-hover"
+                      alt="preview of journal webpage showing an illustration of a little girl standing in front of trees"
+                    />
+
+                    <h3> Interactive Journal</h3>
+                    <p>
+                      Write a journal entry to an imaginary friend or share the
+                      message with someone else! This page was designed to feel
+                      like a gentle, interactive community to support
+                      mindfulness and communication.{" "}
+                    </p>
+
+                    <p className="tags">
+                      &bull; Javascript &bull; Semantic UI React &bull; RegExp
+                      &bull; Audio &bull; HTML &bull; CSS/SCSS &bull;{" "}
+                    </p>
+                  </article>
+                </a>
+              </div>
 
               {/* Item 4 */}
-              <div className="grid-item-4"></div>
+              <div className="grid-item-4">
+                <a href={"https://anngineer.github.io/to-do-dog/"}>
+                  <article className="portfolio-example">
+                    <img
+                      src={tododog1}
+                      // className="hide-on-hover"
+                      alt="preview of website showing an illustration of a dog in a mountain valley"
+                    />
+
+                    <h3> To Do Dog</h3>
+                    <p>
+                      To Do Dog encourages making lists and checking them off
+                      with an animated dog to motivate you. He trots alongside
+                      while you write and wiggles when a task is completed.
+                      Local storage saves your list so that you can pick up the
+                      next day wherever you left off. Drop by and tap the dog to
+                      pet him!{" "}
+                    </p>
+                    <p className="tags">
+                      &bull; Javascript &bull; Animated Sprites &bull; Local
+                      Storage &bull; HTML &bull; CSS/SCSS &bull;{" "}
+                    </p>
+                  </article>
+                </a>
+              </div>
 
               {/* Item 5 */}
-              <div className="grid-item-5"></div>
+              <div className="grid-item-5">
+                <a href={"https://anngineer.github.io/writing-blog/"}>
+                  <article className="portfolio-example">
+                    <img
+                      src={WritingBlog1}
+                      className="hide-on-hover"
+                      alt="preview of the blog website showing blog posts in dark theme"
+                    />
+                    <img
+                      src={WritingBlog2}
+                      className="show-on-hover"
+                      alt="preview of the blog website showing blog posts in light theme"
+                    />
+
+                    <h3> Blog Template</h3>
+                    <p>
+                      {" "}
+                      This writing blog template has a dark and a light theme so
+                      that readers can choose which view is more comfortable on
+                      their eyes.{" "}
+                    </p>
+
+                    <p className="tags">
+                      &bull; React with State and JSX &bull; React Router Dom v6
+                      &bull; Semantic UI React &bull; Javascript &bull; HTML
+                      &bull; CSS/SCSS &bull;{" "}
+                    </p>
+                  </article>
+                </a>
+              </div>
             </div>
           </div>
         </div>
