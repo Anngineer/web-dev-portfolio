@@ -14,7 +14,7 @@ function App() {
 
   return (
     <BrowserRouter
-      basename={`web-dev-portfolio` || "" || window.location.pathname}
+    // basename={`web-dev-portfolio` || "" || window.location.pathname}
     >
       <ScrollToTop>
         <div className="App">
