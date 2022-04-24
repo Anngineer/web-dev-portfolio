@@ -38,6 +38,7 @@ const Home = ({ dropDownVisible, setDropDownVisible }) => {
 
           <div className="grid-wrapper">
             <div className="portfolio-grid">
+              {/* Item One */}
               <div className="grid-item-1">
                 <a href={"https://anngineer.github.io/character-creator/"}>
                   <article className="portfolio-example">
@@ -68,6 +69,47 @@ const Home = ({ dropDownVisible, setDropDownVisible }) => {
                   </article>
                 </a>
               </div>
+
+              {/* Item 2 */}
+              <div className="grid-item-2">
+                <a href={"https://anngineer.github.io/resource-hub/"}>
+                  <article className="portfolio-example">
+                    <img
+                      src={ResourceHub1}
+                      className="hide-on-hover"
+                      alt="preview of resource website showing an illustration of a house and a mountain"
+                    />
+                    <img
+                      src={ResourceHub2}
+                      className="show-on-hover"
+                      alt="preview of resource website showing a checkbox filter for posts"
+                    />
+
+                    <h3> Resource Page Template</h3>
+                    <p>
+                      Resource websites have always drawn my interest with their
+                      clean, bright themes and easily searchable cards. I wanted
+                      to design a resource hub that felt approachable but crisp.
+                      Use the drop-down for a suggestion or filter information
+                      with checkboxes in the resource section.
+                    </p>
+                    <p className="tags">
+                      &bull; React with State and JSX &bull; React Router Dom v6
+                      &bull; Semantic UI React &bull; Javascript &bull; HTML
+                      &bull; CSS/SCSS &bull;{" "}
+                    </p>
+                  </article>
+                </a>
+              </div>
+
+              {/* Item 3 */}
+              <div className="grid-item-3"></div>
+
+              {/* Item 4 */}
+              <div className="grid-item-4"></div>
+
+              {/* Item 5 */}
+              <div className="grid-item-5"></div>
             </div>
           </div>
         </div>
