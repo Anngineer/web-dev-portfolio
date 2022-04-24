@@ -13,7 +13,9 @@ function App() {
   const [dropDownVisible, setDropDownVisible] = useState(false);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      basename={`web-dev-portfolio` || "" || window.location.pathname}
+    >
       <ScrollToTop>
         <div className="App">
           <Routes>
