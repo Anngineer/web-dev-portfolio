@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HashRouter as Router } from "react-router-dom";
 
-import ScrollToTop from "./ScrollToTop";
+// import ScrollToTop from "./ScrollToTop";
 import Home from "./Home";
 import About from "./About";
 import { useState } from "react";
@@ -15,30 +15,30 @@ function App() {
 
   return (
     <Router>
-      <ScrollToTop>
-        <div className="App">
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <Home
-                  dropDownVisible={dropDownVisible}
-                  setDropDownVisible={setDropDownVisible}
-                />
-              }
-            />
-            <Route
-              path="/about"
-              element={
-                <About
-                  dropDownVisible={dropDownVisible}
-                  setDropDownVisible={setDropDownVisible}
-                />
-              }
-            />
-          </Routes>
-        </div>
-      </ScrollToTop>
+      {/* <ScrollToTop> */}
+      <div className="App">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home
+                dropDownVisible={dropDownVisible}
+                setDropDownVisible={setDropDownVisible}
+              />
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <About
+                dropDownVisible={dropDownVisible}
+                setDropDownVisible={setDropDownVisible}
+              />
+            }
+          />
+        </Routes>
+      </div>
+      {/* </ScrollToTop> */}
     </Router>
   );
 }
