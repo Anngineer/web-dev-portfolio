@@ -588,3 +588,158 @@ nav {
     }
   }
 }
+
+// -----------------End Portfolio Section -------------------------------------
+// ----------------------------------------------------------------------------------------------
+
+/*------------------------------------------------- Contact Me Section ----------------------------------------------------------------------------*/
+#contact-section {
+  padding-bottom: 23.28px;
+  /*This makes it so the bottom corners don't move when the links are hovered */
+  background-color: $background-light;
+  text-align: center;
+  color: $text-middle;
+  font-size: 1.5rem;
+}
+
+/* Corners for contact */
+.contact-section-wrapper {
+  position: relative;
+  display: inline-block;
+  /* width: 70vw; */
+  transition: width 0.4s linear;
+  width: 72.5%;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  padding: 2rem 1rem;
+}
+.contact-top,
+.contact-bottom {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+/* #e34815; */
+.contact-top {
+  top: 0;
+  border-top: 6px solid $border-orange;
+}
+
+.contact-bottom {
+  bottom: 0;
+  border-bottom: 6px solid $border-orange;
+}
+
+.contact-left {
+  left: 0;
+  border-left: 6px solid $border-orange;
+}
+
+.contact-right {
+  right: 0;
+  border-right: 6px solid $border-orange;
+}
+
+#contact-section h2 {
+  font-family: "Source Sans Pro";
+  margin-bottom: 1rem;
+}
+
+/* the row of contact links */
+.link-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+  margin: 1.3rem auto 2rem auto;
+}
+
+#contact-section {
+  a {
+    text-decoration: none;
+    color: $background-dark;
+    font-size: 1.2rem;
+    margin-bottom: 0.35rem;
+  }
+  .fas,
+  .fab {
+    color: $background-dark;
+    background-color: $background-light;
+  }
+
+  a:active,
+  a:active .fab,
+  a:active .fas {
+    color: $background-dark;
+    font-size: 1.2rem;
+    margin-bottom: 0.35rem;
+  }
+
+  a:hover,
+  a:hover .fab,
+  a:hover .fas {
+    color: $link-color;
+    // font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+}
+
+// Contact Section Responsive Media Calls
+
+@media (max-width: 599px) {
+  #contact-section {
+    .contact-section-wrapper {
+      width: 93.5%;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+    .link-box {
+      width: 70%;
+      margin-top: 1.5rem;
+    }
+    a {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  #contact-section {
+    p {
+      font-size: 1.3rem;
+    }
+
+    .link-box {
+      transition: margin 0.4s linear;
+      margin-top: 1.5rem;
+      width: 60%;
+    }
+    .contact-section-wrapper {
+      width: 93.5%;
+    }
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  #contact-section {
+    .contact-section-wrapper {
+      transition: width 0.4s linear;
+      width: 93.5%;
+    }
+    .link-box {
+      width: 40%;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  #contact-section {
+    .link-box {
+      width: 35%;
+    }
+  }
+  /* This keeps the social media links from expanding too wide. */
+}

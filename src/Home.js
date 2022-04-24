@@ -1,4 +1,5 @@
 import Nav from "./Nav";
+import Contact from "./Contact";
 // images for portfolio
 import characterintro1 from "./images/characterintro1.jpg";
 import characterintro2 from "./images/characterintro2.jpg";
@@ -194,9 +195,7 @@ const Home = ({ dropDownVisible, setDropDownVisible }) => {
         </div>
       </section>
 
-      <div id="contact-section">
-        <h2>Contact</h2>
-      </div>
+      <Contact />
     </div>
   );
 };
