@@ -10,6 +10,7 @@ import ResourceHub2 from "./images/ResourceHub2.jpg";
 import tododog1 from "./images/tododog1.jpg";
 import WritingBlog1 from "./images/WritingBlog1.jpg";
 import WritingBlog2 from "./images/WritingBlog2.jpg";
+import Footer from "./Footer";
 
 const Home = ({ dropDownVisible, setDropDownVisible }) => {
   return (
@@ -196,6 +197,7 @@ const Home = ({ dropDownVisible, setDropDownVisible }) => {
       </section>
 
       <Contact />
+      <Footer />
     </div>
   );
 };

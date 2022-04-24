@@ -49,7 +49,8 @@ h2 {
 
 #introduction-section,
 #portfolio-section,
-#contact-section {
+#contact-section,
+#about-section {
   padding: 10px 15px;
   width: 100%;
 }
@@ -365,7 +366,8 @@ nav #dropdown-button {
 
 /* ------------------------------- */
 /* This is the corners on the portfolio h2 */
-.portfolio-header-wrapper {
+.portfolio-header-wrapper,
+.about-header-wrapper {
   position: relative;
   display: inline-block;
   margin-top: 6rem;
@@ -828,5 +830,113 @@ nav #dropdown-button {
     width: 35%;
   }
   /* This keeps the social media links from expanding too wide. */
+}
+
+#about-section {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  background-color: #1e1e1e;
+  color: #f2f2f3;
+  text-align: center;
+}
+
+#about-section h2 {
+  font-family: "Source Sans Pro";
+  font-size: 3rem;
+  font-weight: 450;
+  padding: 5px;
+  margin: 0;
+}
+
+.about-description {
+  text-align: left;
+  width: 72.5%;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-description .description-block-2 {
+  margin-top: 2rem;
+}
+
+.about-description h3 {
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  padding-left: 0;
+  border-bottom: #e35615 solid 2px;
+  margin-bottom: 0.5rem;
+}
+
+.about-description p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 599px) {
+  .about-description {
+    width: 93.5%;
+  }
+  .about-description p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 599px) {
+  #about-section {
+    padding-top: 1rem;
+  }
+}
+
+/*---------------------------------------------------------- Footer section-------------------------------------------------------- */
+#footer {
+  position: relative;
+  background-color: #1e1e1e;
+  height: 7rem;
+  color: #8d8d8f;
+}
+
+#footer .image-reference {
+  text-align: right;
+  padding: 2rem;
+  line-height: 1.4;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #8d8d8f;
+}
+
+#footer i {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 599px) {
+  #footer .image-reference {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  #footer .image-reference {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  #contact-section .contact-section-wrapper {
+    -webkit-transition: width 0.4s linear;
+    transition: width 0.4s linear;
+    width: 93.5%;
+  }
+  #contact-section .link-box {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #footer .image-reference {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=App.css.map */

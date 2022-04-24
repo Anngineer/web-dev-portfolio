@@ -34,105 +34,6 @@ h2 {
 /* __________________________________________________________________*/
 /* ----------------------BEGIN PORTFOLIO SECTION----------------------------- */
 /*------------------------------------------------- Contact Me Section ----------------------------------------------------------------------------*/
-#contact-section {
-  padding-bottom: 23.28px;
-  /*This makes it so the bottom corners don't move when the links are hovered */
-  background-color: #f8f8f9;
-  text-align: center;
-  color: #242423;
-  font-size: 1.5rem;
-}
-
-/* Corners for contact */
-.contact-section-wrapper {
-  position: relative;
-  display: inline-block;
-  /* width: 70vw; */
-  -webkit-transition: width 0.4s linear;
-  transition: width 0.4s linear;
-  width: 72.5%;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
-  padding: 2rem 1rem;
-}
-
-.contact-top,
-.contact-bottom {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-}
-
-/* #e34815; */
-.contact-top {
-  top: 0;
-  border-top: 6px solid #e35615;
-}
-
-.contact-bottom {
-  bottom: 0;
-  border-bottom: 6px solid #e35615;
-}
-
-.contact-left {
-  left: 0;
-  border-left: 6px solid #e35615;
-}
-
-.contact-right {
-  right: 0;
-  border-right: 6px solid #e35615;
-}
-
-#contact-section h2 {
-  font-family: "Source Sans Pro";
-  margin-bottom: 1rem;
-}
-
-/* the row of contact links */
-.link-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 40%;
-  margin: 1.3rem auto 2rem auto;
-}
-
-#contact-section a {
-  text-decoration: none;
-  color: #1e1e1e;
-  font-size: 1.2rem;
-  margin-bottom: 0.35rem;
-}
-
-#contact-section .fas,
-#contact-section .fab {
-  color: #1e1e1e;
-  background-color: #f8f8f9;
-}
-
-#contact-section a:active,
-#contact-section a:active .fab,
-#contact-section a:active .fas {
-  color: #1e1e1e;
-  font-size: 1.2rem;
-  margin-bottom: 0.35rem;
-}
-
-#contact-section a:hover,
-#contact-section a:hover .fab,
-#contact-section a:hover .fas {
-  color: #43b1b9;
-  margin-bottom: 0;
-}
-
 /*---------------------------------------------------------- Footer section-------------------------------------------------------- */
 #footer {
   position: relative;
@@ -163,19 +64,6 @@ h2 {
 /* ------------------------------MEDIA CALLS --------------------------------*/
 /* -------------------------Phone Only (0px-599px)---------------------*/
 @media (max-width: 599px) {
-  #contact-section .contact-section-wrapper {
-    width: 93.5%;
-  }
-  #contact-section p {
-    font-size: 1.2rem;
-  }
-  #contact-section .link-box {
-    width: 70%;
-    margin-top: 1.5rem;
-  }
-  #contact-section a {
-    font-size: 0.8rem;
-  }
   #footer .image-reference {
     font-size: 0.8rem;
   }
@@ -189,21 +77,6 @@ h2 {
 }
 
 /* --------------------Tablet Portrait Only (600px-899px)----------------*/
-@media (min-width: 600px) and (max-width: 899px) {
-  #contact-section p {
-    font-size: 1.3rem;
-  }
-  #contact-section .link-box {
-    -webkit-transition: margin 0.4s linear;
-    transition: margin 0.4s linear;
-    margin-top: 1.5rem;
-    width: 60%;
-  }
-  #contact-section .contact-section-wrapper {
-    width: 93.5%;
-  }
-}
-
 /*--------------------Tablet Landscape Only (900px-1199px)---------------- */
 @media (min-width: 900px) and (max-width: 1199px) {
   #contact-section .contact-section-wrapper {
@@ -252,6 +125,349 @@ h2 {
     grid-area: three;
   }
   #portfolio-section .portfolio-grid .grid-item-4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: four;
+  }
+  #portfolio-section .portfolio-grid .grid-item-5 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: five;
+  }
+  #portfolio-section .portfolio-grid .grid-item-6 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: six;
+  }
+  #portfolio-section p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media calls for contact section */
+@media (min-width: 1600px) {
+  #contact-section .link-box {
+    width: 35%;
+  }
+  /* This keeps the social media links from expanding too wide. */
+}
+
+#portfolio-section {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  background-color: #1e1e1e;
+  color: #f2f2f3;
+  text-align: center;
+}
+
+#portfolio-section h2 {
+  font-family: "Source Sans Pro";
+  font-size: 3rem;
+  font-weight: 450;
+  padding: 5px;
+  margin: 0;
+}
+
+/* ------------------------------- */
+/* This is the corners on the portfolio h2 */
+.portfolio-header-wrapper,
+.about-header-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  padding: 10px 15px;
+}
+
+.top,
+.bottom {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.top {
+  top: 0;
+  border-top: 6px solid #050505;
+}
+
+.bottom {
+  bottom: 0;
+  border-bottom: 6px solid #050505;
+}
+
+.left {
+  left: 0;
+  border-left: 6px solid #050505;
+}
+
+.right {
+  right: 0;
+  border-right: 6px solid #050505;
+}
+
+/* End of corner styling*/
+/* ------------------ */
+/* sets the size of the grid and centers it */
+.grid-wrapper {
+  /* width: 90vw; */
+  width: 93.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Setting grid and divisions of grid */
+.portfolio-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "one two three" "four five six";
+  grid-gap: 30px;
+  justify-items: center;
+}
+
+.portfolio-grid .grid-item-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+.portfolio-grid .grid-item-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+.portfolio-grid .grid-item-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+.portfolio-grid .grid-item-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+.portfolio-grid .grid-item-5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+.portfolio-grid .grid-item-6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+/* makes each grid item clickable anywhere  */
+.portfolio-grid a {
+  text-decoration: none;
+  color: #f2f2f3;
+}
+
+/* This stylizes the project cells */
+.portfolio-example {
+  text-align: center;
+  padding: 1.3rem 1.3rem 1.5rem 1.3rem;
+  background-color: #333333;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
+          box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
+}
+
+.portfolio-example img {
+  width: 100%;
+  height: 11rem;
+}
+
+.portfolio-example img.show-on-hover {
+  display: none;
+}
+
+.portfolio-example:hover img.hide-on-hover {
+  display: none;
+}
+
+.portfolio-example:hover img.show-on-hover {
+  display: inline-block;
+}
+
+.portfolio-example p.tags {
+  text-align: center;
+  color: #f39c74;
+  padding-top: 1rem;
+}
+
+.portfolio-example h3 {
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.portfolio-grid a:hover h3 {
+  color: #43b1b9;
+}
+
+.portfolio-example p {
+  text-align: left;
+  line-height: 1.3;
+}
+
+@media (max-width: 599px) {
+  #portfolio-section {
+    padding-top: 1rem;
+  }
+  #portfolio-section .portfolio-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "one" "two" "three" "four" "five" "six";
+  }
+  #portfolio-section .portfolio-grid .grid-item-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: one;
+  }
+  #portfolio-section .portfolio-grid .grid-item-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: two;
+  }
+  #portfolio-section .portfolio-grid .grid-item-3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: three;
+  }
+  #portfolio-section .portfolio-grid .grid-item-4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: four;
+  }
+  #portfolio-section .portfolio-grid .grid-item-5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: five;
+  }
+  #portfolio-section .portfolio-grid .grid-item-6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: six;
+  }
+  #portfolio-section .portfolio-example {
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+  }
+  #portfolio-section .portfolio-example img {
+    width: 100%;
+    height: 10rem;
+  }
+  #portfolio-section .portfolio-example p {
+    text-align: justify;
+  }
+  #portfolio-section .portfolio-example p.tags {
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  #portfolio-section .portfolio-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "one two" "three four" "five six";
+  }
+  #portfolio-section .portfolio-grid .grid-item-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: one;
+  }
+  #portfolio-section .portfolio-grid .grid-item-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: two;
+  }
+  #portfolio-section .portfolio-grid .grid-item-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: three;
+  }
+  #portfolio-section .portfolio-grid .grid-item-4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: four;
+  }
+  #portfolio-section .portfolio-grid .grid-item-5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: five;
+  }
+  #portfolio-section .portfolio-grid .grid-item-6 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: six;
+  }
+  #portfolio-section .portfolio-example {
+    -webkit-transition: width 0.4s linear;
+    transition: width 0.4s linear;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  #portfolio-section .portfolio-example {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #portfolio-section {
+    position: relative;
+  }
+  #portfolio-section .portfolio-example {
+    -webkit-transition: width 0.4s linear;
+    transition: width 0.4s linear;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #portfolio-section {
+    position: relative;
+  }
+  #portfolio-section .portfolio-grid {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-gap: 40px;
+        grid-template-areas: "one two three four" "five six . .";
+  }
+  #portfolio-section .portfolio-grid .grid-item-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: one;
+  }
+  #portfolio-section .portfolio-grid .grid-item-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: two;
+  }
+  #portfolio-section .portfolio-grid .grid-item-3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: three;
+  }
+  #portfolio-section .portfolio-grid .grid-item-4 {
     -ms-grid-row: 1;
     -ms-grid-column: 4;
     grid-area: four;
@@ -269,13 +485,5 @@ h2 {
   #portfolio-section p {
     font-size: 1.2rem;
   }
-}
-
-/* Media calls for contact section */
-@media (min-width: 1600px) {
-  #contact-section .link-box {
-    width: 35%;
-  }
-  /* This keeps the social media links from expanding too wide. */
 }
 /*# sourceMappingURL=Unused.css.map */

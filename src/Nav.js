@@ -24,16 +24,18 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
       <div id="right-nav">
         <LinkScroll
           to="portfolio-section"
-          smooth={true}
-          duration={600}
+          smooth="linear"
+          delay={0}
+          duration={450}
           id="link-portfolio"
         >
           portfolio
         </LinkScroll>
         <LinkScroll
           to="contact-section"
-          smooth={true}
-          duration={600}
+          smooth="linear"
+          delay={0}
+          duration={450}
           id="link-portfolio"
         >
           contact
@@ -62,8 +64,9 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
         <div id="right-nav">
           <LinkScroll
             to="portfolio-section"
-            smooth={true}
-            duration={600}
+            smooth="linear"
+            delay={0}
+            duration={450}
             id="link-portfolio"
             onClick={() => closeDropDown()}
           >
@@ -71,8 +74,9 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
           </LinkScroll>
           <LinkScroll
             to="contact-section"
-            smooth={true}
-            duration={1000}
+            smooth="linear"
+            delay={0}
+            duration={450}
             id="link-portfolio"
             onClick={() => closeDropDown()}
           >
@@ -99,8 +103,9 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
         <LinkToRoute to="/">portfolio</LinkToRoute>
         <LinkScroll
           to="contact-section"
-          smooth={true}
-          duration={600}
+          smooth="linear"
+          delay={0}
+          duration={450}
           id="link-portfolio"
         >
           contact
@@ -132,8 +137,9 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
           </LinkToRoute>
           <LinkScroll
             to="contact-section"
-            smooth={true}
-            duration={600}
+            smooth="linear"
+            delay={0}
+            duration={450}
             id="link-portfolio"
             onClick={() => closeDropDown()}
           >
