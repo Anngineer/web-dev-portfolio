@@ -92,6 +92,7 @@ nav {
     &:hover {
       // font-weight: 550;
       color: $link-color;
+      cursor: pointer;
     }
   }
   #left-nav,
@@ -118,6 +119,51 @@ nav {
     padding: 0 1rem;
     border: none;
     display: none;
+  }
+}
+
+// ------ Media Calls for Navbar
+
+/* -------------------------Phone Only (0px-599px)---------------------*/
+
+@media (max-width: 599px) {
+  .nav {
+    flex-direction: column;
+
+    #left-nav {
+      justify-content: space-between;
+      //   width: 100%;
+      //   flex-direction: row;
+    }
+    #right-nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      //   display: none;
+    }
+    // this shows the button for the drop-down menu
+    #dropdown-button {
+      display: inline-block;
+    }
+    #dropdown-button:hover {
+      cursor: pointer;
+    }
+  }
+  /* this shows the menu, is gets added to div#right-nav when the side button is clicked */
+  #right-nav.dropdown {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 1rem 0.3rem 0;
+  }
+
+  // Customizing the menu
+  #right-nav a {
+    text-align: right;
+    width: 100%;
+    padding-right: 1rem;
+  }
+  #right-nav a:hover div {
+    color: $link-color;
   }
 }
 

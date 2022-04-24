@@ -67,6 +67,7 @@ nav a {
 
 nav a:hover {
   color: #43b1b9;
+  cursor: pointer;
 }
 
 nav #left-nav,
@@ -101,6 +102,56 @@ nav #dropdown-button {
   padding: 0 1rem;
   border: none;
   display: none;
+}
+
+/* -------------------------Phone Only (0px-599px)---------------------*/
+@media (max-width: 599px) {
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav #left-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav #right-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .nav #dropdown-button {
+    display: inline-block;
+  }
+  .nav #dropdown-button:hover {
+    cursor: pointer;
+  }
+  /* this shows the menu, is gets added to div#right-nav when the side button is clicked */
+  #right-nav.dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0.3rem 1rem 0.3rem 0;
+  }
+  #right-nav a {
+    text-align: right;
+    width: 100%;
+    padding-right: 1rem;
+  }
+  #right-nav a:hover div {
+    color: #43b1b9;
+  }
 }
 
 .about,

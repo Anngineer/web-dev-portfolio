@@ -1,8 +1,12 @@
 import Nav from "./Nav";
-const Home = () => {
+const Home = ({ dropDownVisible, setDropDownVisible }) => {
   return (
     <div className="home">
-      <Nav location={"home"} />
+      <Nav
+        location={"home"}
+        dropDownVisible={dropDownVisible}
+        setDropDownVisible={setDropDownVisible}
+      />
       <div id="intro-section" style={{ height: "100vh" }}>
         <h1>Home</h1>
       </div>
