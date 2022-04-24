@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/web-dev-portfolio/static/css/main.e067028f.css",
-    "main.js": "/web-dev-portfolio/static/js/main.8a16743f.js",
-    "static/media/background3a.jpg": "/web-dev-portfolio/static/media/background3a.96c7b7e821ddf287b871.jpg",
-    "static/media/background3smalld.jpg": "/web-dev-portfolio/static/media/background3smalld.b4268f0b84acd763735e.jpg",
-    "static/media/WritingBlog1.jpg": "/web-dev-portfolio/static/media/WritingBlog1.8b286d6f55b4ddb23738.jpg",
-    "static/media/characterintro2.jpg": "/web-dev-portfolio/static/media/characterintro2.6282e2e458bebc122cd6.jpg",
-    "static/media/ResourceHub2.jpg": "/web-dev-portfolio/static/media/ResourceHub2.bf60aba7fd4ff59ac758.jpg",
-    "static/media/tododog1.jpg": "/web-dev-portfolio/static/media/tododog1.604ea2f3bbfc995429ad.jpg",
-    "static/media/characterintro1.jpg": "/web-dev-portfolio/static/media/characterintro1.abcbe4c7e33fbb948fb1.jpg",
-    "static/media/WritingBlog2.jpg": "/web-dev-portfolio/static/media/WritingBlog2.2b50d33bdd51f86d4522.jpg",
-    "static/media/ResourceHub1.jpg": "/web-dev-portfolio/static/media/ResourceHub1.9388ebca736b97827d9d.jpg",
-    "static/media/forestfriend2.jpg": "/web-dev-portfolio/static/media/forestfriend2.a3fbbba9f312eef55947.jpg",
-    "static/media/forestfriend1.jpg": "/web-dev-portfolio/static/media/forestfriend1.a38541e9fdafd3dff220.jpg",
-    "index.html": "/web-dev-portfolio/index.html",
-    "main.e067028f.css.map": "/web-dev-portfolio/static/css/main.e067028f.css.map",
-    "main.8a16743f.js.map": "/web-dev-portfolio/static/js/main.8a16743f.js.map"
+    "main.css": "/static/css/main.0361e77a.css",
+    "main.js": "/static/js/main.078cb9f5.js",
+    "static/media/background3a.jpg": "/static/media/background3a.96c7b7e821ddf287b871.jpg",
+    "static/media/background3smalld.jpg": "/static/media/background3smalld.b4268f0b84acd763735e.jpg",
+    "static/media/WritingBlog1.jpg": "/static/media/WritingBlog1.8b286d6f55b4ddb23738.jpg",
+    "static/media/characterintro2.jpg": "/static/media/characterintro2.6282e2e458bebc122cd6.jpg",
+    "static/media/ResourceHub2.jpg": "/static/media/ResourceHub2.bf60aba7fd4ff59ac758.jpg",
+    "static/media/tododog1.jpg": "/static/media/tododog1.604ea2f3bbfc995429ad.jpg",
+    "static/media/characterintro1.jpg": "/static/media/characterintro1.abcbe4c7e33fbb948fb1.jpg",
+    "static/media/WritingBlog2.jpg": "/static/media/WritingBlog2.2b50d33bdd51f86d4522.jpg",
+    "static/media/ResourceHub1.jpg": "/static/media/ResourceHub1.9388ebca736b97827d9d.jpg",
+    "static/media/forestfriend2.jpg": "/static/media/forestfriend2.a3fbbba9f312eef55947.jpg",
+    "static/media/forestfriend1.jpg": "/static/media/forestfriend1.a38541e9fdafd3dff220.jpg",
+    "index.html": "/index.html",
+    "main.0361e77a.css.map": "/static/css/main.0361e77a.css.map",
+    "main.078cb9f5.js.map": "/static/js/main.078cb9f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.e067028f.css",
-    "static/js/main.8a16743f.js"
+    "static/css/main.0361e77a.css",
+    "static/js/main.078cb9f5.js"
   ]
 }
