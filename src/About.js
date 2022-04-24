@@ -7,6 +7,7 @@ const About = ({ dropDownVisible, setDropDownVisible }) => {
         dropDownVisible={dropDownVisible}
         setDropDownVisible={setDropDownVisible}
       />
+
       <div id="about-section" style={{ height: "100vh" }}>
         <h2>About Section</h2>
       </div>

@@ -7,9 +7,12 @@ const Home = ({ dropDownVisible, setDropDownVisible }) => {
         dropDownVisible={dropDownVisible}
         setDropDownVisible={setDropDownVisible}
       />
-      <div id="intro-section" style={{ height: "100vh" }}>
-        <h1>Home</h1>
-      </div>
+      <section id="introduction-section">
+        <header className="intro-text-wrapper">
+          <h1>Hey there! I'm Ann Bridge,</h1>
+          <h2>web developer and researcher.</h2>
+        </header>
+      </section>
       <div id="portfolio-section" style={{ height: "100vh" }}>
         <h2>Portfolio</h2>
       </div>

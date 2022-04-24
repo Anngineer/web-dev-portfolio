@@ -30,53 +30,6 @@ h2 {
 /* ____________MAKE MEDIA CALLS HERE____________________________ */
 /* ______________________________________________________________________ */
 /* ---------------------- BEGIN INTRO SECTION --------------------*/
-#introduction-section {
-  padding-top: 3rem;
-  -webkit-transition: height 0.4s linear;
-  transition: height 0.4s linear;
-  height: 29rem;
-  color: #242423;
-  background-color: #1e1e1e;
-  /*This is a fallback if background-image doesn't load */
-  background-image: url(../images/3a.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* This is a container holding the circle and its text */
-.intro-text-wrapper {
-  -webkit-transition: height 0.4s linear;
-  transition: height 0.4s linear;
-  -webkit-transition: width 0.4s linear;
-  transition: width 0.4s linear;
-  -webkit-transition: margin 0.4s linear;
-  transition: margin 0.4s linear;
-  height: 30rem;
-  width: 29rem;
-  padding: 10px;
-  margin-top: 8rem;
-  margin-left: 8rem;
-  border-radius: 100%;
-  /*This makes it a circle*/
-  display: block;
-  background-color: #f8a883;
-  background-color: #f39c74;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
-          box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
-  /* other colors I considered were #f6b597;,#f8b08f;, and #242423; */
-}
-
-#introduction-section h1 {
-  margin-top: 9rem;
-  font-size: 1.8rem;
-}
-
-#introduction-section h2 {
-  font-size: 1.4rem;
-  margin: 1.5rem;
-}
-
-/*-------------------------END INTRO SECTION------------------------- */
 /* __________________________________________________________________ */
 /* __________________________________________________________________*/
 /* ----------------------BEGIN PORTFOLIO SECTION----------------------------- */
@@ -377,92 +330,6 @@ h2 {
 /* ------------------------------MEDIA CALLS --------------------------------*/
 /* -------------------------Phone Only (0px-599px)---------------------*/
 @media (max-width: 599px) {
-  nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  nav #left-nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  nav #right-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    display: none;
-  }
-  nav #dropdown-button {
-    display: inline-block;
-  }
-  nav #dropdown-button:hover {
-    cursor: pointer;
-  }
-  /* this shows the menu, is gets added to div#right-nav when the side button is clicked */
-  #right-nav.dropdown {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0.3rem 1rem 0.3rem 0;
-  }
-  #right-nav a div {
-    text-align: right;
-  }
-  #right-nav a:hover div {
-    color: #43b1b9;
-  }
-  #introduction-section {
-    background-image: url(../images/3smalld.jpg);
-  }
-  #introduction-section .intro-text-wrapper {
-    -webkit-transition: margin 0.4s linear;
-    transition: margin 0.4s linear;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15vw;
-    margin-bottom: 12vw;
-    -webkit-transition: height 0.4s linear;
-    transition: height 0.4s linear;
-    -webkit-transition: width 0.4s linear;
-    transition: width 0.4s linear;
-    height: 300px;
-    width: 300px;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  #introduction-section h1 {
-    margin-top: 0;
-    font-size: 1.2rem;
-  }
-  #introduction-section h2 {
-    font-size: 0.9rem;
-    margin: 0.5rem;
-  }
   #portfolio-section {
     padding-top: 1rem;
   }
@@ -539,32 +406,6 @@ h2 {
 
 /* Iphone 0-350px */
 @media (max-width: 360px) {
-  #introduction-section {
-    -webkit-transition: height 0.4s linear;
-    transition: height 0.4s linear;
-    height: 25rem;
-  }
-  #introduction-section .intro-text-wrapper {
-    -webkit-transition: height 0.4s linear;
-    transition: height 0.4s linear;
-    -webkit-transition: width 0.4s linear;
-    transition: width 0.4s linear;
-    height: 75vw;
-    width: 75vw;
-    max-height: 250px;
-    max-width: 250px;
-    padding-top: 10px;
-  }
-  #introduction-section h1 {
-    margin-top: 0;
-    font-size: 0.95rem;
-    font-weight: 600;
-  }
-  #introduction-section h2 {
-    font-size: 0.875rem;
-    margin: 0.5rem;
-    font-weight: 450;
-  }
   #footer .image-reference {
     font-size: 0.8rem;
   }
@@ -572,12 +413,6 @@ h2 {
 
 /* --------------------Tablet Portrait Only (600px-899px)----------------*/
 @media (min-width: 600px) and (max-width: 899px) {
-  #introduction-section .intro-text-wrapper {
-    -webkit-transition: margin 0.4s linear;
-    transition: margin 0.4s linear;
-    margin-left: auto;
-    margin-right: auto;
-  }
   #portfolio-section .portfolio-grid {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -651,16 +486,6 @@ h2 {
 
 /* ----------------------------PC (1200px-1600px)----------------------------- */
 @media (min-width: 1200px) and (max-width: 1599px) {
-  #introduction-section {
-    position: relative;
-    min-height: 29rem;
-    height: 80vh;
-  }
-  #introduction-section .intro-text-wrapper {
-    position: absolute;
-    left: 8rem;
-    bottom: -12rem;
-  }
   #portfolio-section {
     position: relative;
   }
@@ -675,30 +500,6 @@ h2 {
 }
 
 /* --------------------------Big Desktop and Up (1600px+) -------------------*/
-@media (min-width: 1600px) {
-  #introduction-section {
-    -webkit-transition: height 0.4s linear;
-    transition: height 0.4s linear;
-    min-height: 47rem;
-    height: 80vh;
-    position: relative;
-  }
-  #introduction-section .intro-text-wrapper {
-    position: absolute;
-    height: 36rem;
-    width: 36rem;
-    left: 10vw;
-    bottom: -14rem;
-  }
-  #introduction-section h1 {
-    margin-top: 11rem;
-    font-size: 2.2rem;
-  }
-  #introduction-section h2 {
-    font-size: 1.5rem;
-  }
-}
-
 @media (min-width: 1600px) {
   #portfolio-section {
     position: relative;
