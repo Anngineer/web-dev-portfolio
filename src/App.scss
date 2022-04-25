@@ -7,7 +7,7 @@ $text-light: #f2f2f3;
 $text-middle: #242423;
 $text-dark: #191919;
 $border-orange: #e35615;
-$font-title: Merriweather, serif;
+// $font-title: Merriweather, serif;
 /* look into garamond, freight text, tiempos text, gt sectra  */
 $font-base: "Source Sans Pro", sans-serif;
 /* Look into futura, open sans, proxima nova, avenir,brandon grotesque, graphik */
@@ -367,7 +367,7 @@ nav {
 }
 
 #portfolio-section h2 {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 3rem;
   font-weight: 450;
   padding: 5px;
@@ -644,7 +644,7 @@ nav {
 }
 
 #contact-section h2 {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 1rem;
 }
 
