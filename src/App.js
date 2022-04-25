@@ -1,11 +1,7 @@
 import "./App.css";
-import { Link } from "react-scroll";
-import { animateScroll as scroll } from "react-scroll";
-import Nav from "./Nav";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { HashRouter as Router } from "react-router-dom";
 
-// import ScrollToTop from "./ScrollToTop";
 import Home from "./Home";
 import About from "./About";
 import { useState } from "react";
@@ -15,7 +11,6 @@ function App() {
 
   return (
     <Router>
-      {/* <ScrollToTop> */}
       <div className="App">
         <Routes>
           <Route
@@ -38,7 +33,6 @@ function App() {
           />
         </Routes>
       </div>
-      {/* </ScrollToTop> */}
     </Router>
   );
 }

@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
+
 import Nav from "./Nav";
 import Contact from "./Contact";
 // images for portfolio
@@ -13,6 +16,10 @@ import WritingBlog2 from "./images/WritingBlog2.jpg";
 import Footer from "./Footer";
 
 const Home = ({ dropDownVisible, setDropDownVisible }) => {
+  useEffect(
+    () => scroll.scrollTo(0, { duration: 100, delay: 0, smooth: "linear" }),
+    []
+  );
   return (
     <div className="home">
       <Nav
