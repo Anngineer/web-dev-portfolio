@@ -209,7 +209,7 @@ nav #dropdown-button {
   border-radius: 100%;
   /*This makes it a circle*/
   display: block;
-  background-color: #ee8363;
+  background-color: #f39c74;
   -webkit-box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
           box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
   /* other colors I considered were #f6b597;,#f8b08f;, and #242423; */
