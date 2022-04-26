@@ -140,6 +140,7 @@ nav {
   }
   #dropdown-button {
     color: $text-light;
+    font-size: 1.4rem;
     background-color: $background-dark;
     padding: 0 1rem;
     border: none;
@@ -186,6 +187,8 @@ nav {
     text-align: right;
     width: 100%;
     padding-right: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.35rem;
   }
   #right-nav a:hover div {
     color: $link-color;
@@ -222,8 +225,10 @@ nav {
   margin-left: 8rem;
   border-radius: 100%; /*This makes it a circle*/
   display: block;
-  background-color: #f8a883;
-  background-color: #f39c74;
+  // background-color: #f8a883;
+  // background-color: #f39274;
+  background-color: #ee8363;
+  // background-color: #f39c74;
 
   box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
 
@@ -475,7 +480,8 @@ nav {
 
 .portfolio-example p.tags {
   text-align: center;
-  color: #f39c74;
+  // color: #f39c74;
+  color: $link-color;
   padding-top: 1rem;
 }
 
@@ -486,7 +492,8 @@ nav {
 }
 
 .portfolio-grid a:hover h3 {
-  color: $link-color;
+  // color: $link-color;
+  color: #f39c74;
 }
 
 .portfolio-example p {

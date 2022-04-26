@@ -119,6 +119,7 @@ nav .fas {
 
 nav #dropdown-button {
   color: #f2f2f3;
+  font-size: 1.4rem;
   background-color: #1e1e1e;
   padding: 0 1rem;
   border: none;
@@ -169,6 +170,8 @@ nav #dropdown-button {
     text-align: right;
     width: 100%;
     padding-right: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.35rem;
   }
   #right-nav a:hover div {
     color: #43b1b9;
@@ -206,8 +209,7 @@ nav #dropdown-button {
   border-radius: 100%;
   /*This makes it a circle*/
   display: block;
-  background-color: #f8a883;
-  background-color: #f39c74;
+  background-color: #ee8363;
   -webkit-box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
           box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
   /* other colors I considered were #f6b597;,#f8b08f;, and #242423; */
@@ -357,7 +359,7 @@ nav #dropdown-button {
 }
 
 #portfolio-section h2 {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 3rem;
   font-weight: 450;
   padding: 5px;
@@ -496,7 +498,7 @@ nav #dropdown-button {
 
 .portfolio-example p.tags {
   text-align: center;
-  color: #f39c74;
+  color: #43b1b9;
   padding-top: 1rem;
 }
 
@@ -507,7 +509,7 @@ nav #dropdown-button {
 }
 
 .portfolio-grid a:hover h3 {
-  color: #43b1b9;
+  color: #f39c74;
 }
 
 .portfolio-example p {
@@ -735,7 +737,7 @@ nav #dropdown-button {
 }
 
 #contact-section h2 {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 1rem;
 }
 

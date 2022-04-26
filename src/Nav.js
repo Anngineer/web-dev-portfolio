@@ -14,10 +14,19 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
   const homeLargeNav = (
     <nav className="nav">
       <div id="left-nav">
-        <LinkToRoute to="/">
+        <LinkToRoute
+          to="/"
+          onClick={() =>
+            scroll.scrollTo(0, { duration: 100, delay: 0, smooth: "linear" })
+          }
+        >
           <div>Ann Bridge</div>{" "}
         </LinkToRoute>
-        <button className="dropdown-button" id="dropdown-button">
+        <button
+          className="dropdown-button"
+          id="dropdown-button"
+          alt="drop-down"
+        >
           <i className="fas fa-bars" alt="drop-down menu"></i>
         </button>
       </div>
@@ -47,12 +56,18 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
   const homeSmallNav = (
     <nav className="nav">
       <div id="left-nav">
-        <LinkToRoute to="/">
+        <LinkToRoute
+          to="/"
+          onClick={() =>
+            scroll.scrollTo(0, { duration: 100, delay: 0, smooth: "linear" })
+          }
+        >
           <div>Ann Bridge</div>{" "}
         </LinkToRoute>
         <button
           className="dropdown-button"
           id="dropdown-button"
+          alt="drop-down"
           onClick={() => {
             handleDropDownButton();
           }}
@@ -95,7 +110,11 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
         <LinkToRoute to="/">
           <div>Ann Bridge</div>
         </LinkToRoute>
-        <button className="dropdown-button" id="dropdown-button">
+        <button
+          className="dropdown-button"
+          id="dropdown-button"
+          alt="drop-down"
+        >
           <i className="fas fa-bars" alt="drop-down menu"></i>
         </button>
       </div>
@@ -123,6 +142,7 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
         <button
           className="dropdown-button"
           id="dropdown-button"
+          alt="drop-down"
           onClick={() => {
             handleDropDownButton();
           }}
