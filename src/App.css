@@ -568,9 +568,6 @@ nav #dropdown-button {
     width: 100%;
     height: 10rem;
   }
-  #portfolio-section .portfolio-example p {
-    text-align: justify;
-  }
   #portfolio-section .portfolio-example p.tags {
     text-align: center;
   }
