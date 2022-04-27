@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.f8ae946e.css",
+    "main.css": "/static/css/main.d70eb469.css",
     "main.js": "/static/js/main.b4f75efd.js",
     "static/media/background3a.jpg": "/static/media/background3a.96c7b7e821ddf287b871.jpg",
     "static/media/background3smalld.jpg": "/static/media/background3smalld.b4268f0b84acd763735e.jpg",
@@ -14,11 +14,11 @@
     "static/media/forestfriend2.jpg": "/static/media/forestfriend2.a3fbbba9f312eef55947.jpg",
     "static/media/forestfriend1.jpg": "/static/media/forestfriend1.a38541e9fdafd3dff220.jpg",
     "index.html": "/index.html",
-    "main.f8ae946e.css.map": "/static/css/main.f8ae946e.css.map",
+    "main.d70eb469.css.map": "/static/css/main.d70eb469.css.map",
     "main.b4f75efd.js.map": "/static/js/main.b4f75efd.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8ae946e.css",
+    "static/css/main.d70eb469.css",
     "static/js/main.b4f75efd.js"
   ]
 }
