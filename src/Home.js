@@ -68,7 +68,7 @@ const Home = ({ dropDownVisible, setDropDownVisible }) => {
                     5th Edition API, this website steps users through the first
                     stages of choosing their character. Try out the tutorial if
                     you prefer dialogue-style interactions or dive right into
-                    the cave if you're adventerous!{" "}
+                    the cave if you're adventurous!{" "}
                   </p>
                   <p className="tags">
                     &bull; React with State and JSX &bull; React Router Dom v5
@@ -155,8 +155,8 @@ const Home = ({ dropDownVisible, setDropDownVisible }) => {
                   <h3> To Do Dog</h3>
                   <p>
                     To Do Dog encourages making lists and checking them off with
-                    an animated dog to motivate you. He trots alongside while
-                    you write and wiggles when a task is completed. Local
+                    an animated dog to motivate you. He trots alongside while a
+                    task is added and wiggles when an item is completed. Local
                     storage saves your list so that you can pick up the next day
                     wherever you left off. Drop by and tap the dog to pet him!{" "}
                   </p>

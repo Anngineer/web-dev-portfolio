@@ -43,7 +43,7 @@ const About = ({ dropDownVisible, setDropDownVisible }) => {
             <p>
               Generally, I start off by identifying the needs of a client and
               their user, then wire-framing possible website solutions by hand.
-              After that, with images licensed from EnvatoElements, I create
+              After that, with images licensed from Envato Elements, I create
               multiple wire frames in InVision Studio. User feedback helps to
               narrow down which design to use, and I take that into account
               while editing the graphics in Affinity Designer and Affinity
