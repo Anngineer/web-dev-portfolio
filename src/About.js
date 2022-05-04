@@ -46,8 +46,7 @@ const About = ({ dropDownVisible, setDropDownVisible }) => {
               After that, with images licensed from Envato Elements, I create
               multiple wire frames in InVision Studio. User feedback helps to
               narrow down which design to use, and I take that into account
-              while editing the graphics in Affinity Designer and Affinity
-              Photo.{" "}
+              while editing the graphics in Affinity Designer.{" "}
             </p>
           </div>
         </div>
