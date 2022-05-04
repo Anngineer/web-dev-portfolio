@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d70eb469.css",
-    "main.js": "/static/js/main.a5bbc6a4.js",
+    "main.css": "/static/css/main.f4aa503c.css",
+    "main.js": "/static/js/main.9ec2478f.js",
     "static/media/background3a.jpg": "/static/media/background3a.96c7b7e821ddf287b871.jpg",
     "static/media/background3smalld.jpg": "/static/media/background3smalld.b4268f0b84acd763735e.jpg",
     "static/media/WritingBlog1.jpg": "/static/media/WritingBlog1.8b286d6f55b4ddb23738.jpg",
@@ -14,11 +14,11 @@
     "static/media/forestfriend2.jpg": "/static/media/forestfriend2.a3fbbba9f312eef55947.jpg",
     "static/media/forestfriend1.jpg": "/static/media/forestfriend1.a38541e9fdafd3dff220.jpg",
     "index.html": "/index.html",
-    "main.d70eb469.css.map": "/static/css/main.d70eb469.css.map",
-    "main.a5bbc6a4.js.map": "/static/js/main.a5bbc6a4.js.map"
+    "main.f4aa503c.css.map": "/static/css/main.f4aa503c.css.map",
+    "main.9ec2478f.js.map": "/static/js/main.9ec2478f.js.map"
   },
   "entrypoints": [
-    "static/css/main.d70eb469.css",
-    "static/js/main.a5bbc6a4.js"
+    "static/css/main.f4aa503c.css",
+    "static/js/main.9ec2478f.js"
   ]
 }
