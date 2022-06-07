@@ -129,7 +129,14 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
         >
           contact
         </LinkScroll>
-        <LinkToRoute to="/about">about</LinkToRoute>
+        <LinkToRoute
+          to="/about"
+          onClick={() =>
+            scroll.scrollTo(0, { duration: 100, delay: 0, smooth: "linear" })
+          }
+        >
+          about
+        </LinkToRoute>
       </div>
     </nav>
   );
@@ -165,7 +172,13 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
           >
             contact
           </LinkScroll>
-          <LinkToRoute to="/about" onClick={() => closeDropDown()}>
+          <LinkToRoute
+            to="/about"
+            onClick={() => {
+              closeDropDown();
+              scroll.scrollTo(0, { duration: 100, delay: 0, smooth: "linear" });
+            }}
+          >
             about
           </LinkToRoute>
         </div>

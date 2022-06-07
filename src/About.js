@@ -49,6 +49,37 @@ const About = ({ dropDownVisible, setDropDownVisible }) => {
               while editing the graphics in Affinity Designer.{" "}
             </p>
           </div>
+          <div className="description-block-2">
+            <h3>Ongoing</h3>
+            <p>
+              While teaching myself back-end web development, I plan to get
+              contribute to open source projects on{" "}
+              <a
+                href="https://github.com/Anngineer"
+                style={{ color: "#43b1b9" }}
+              >
+                GitHub
+              </a>
+              .
+              <br />
+              <br />I am looking for freelance, part-time, and full-time work.
+              If you would like to connect, please feel free to email me at{" "}
+              <a
+                href={"mailto:anngineer@gmail.com"}
+                style={{ color: "#43b1b9" }}
+              >
+                Anngineer@gmail.com
+              </a>{" "}
+              and add me on&nbsp;
+              <a
+                href="www.linkedin.com/in/anngineer"
+                style={{ color: "#43b1b9" }}
+              >
+                LinkedIn
+              </a>
+              !
+            </p>
+          </div>
         </div>
       </div>
       <Contact />
