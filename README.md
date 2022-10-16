@@ -10,4 +10,4 @@ This project was built with React components in VSCode using HTML, SCSS/CSS, van
 
 ## Contact
 
-Please feel free to contact me at Anngineer@gmail.com in regard to my work or future projects.
+Please feel free to contact me at [LinkedIn](www.linkedin.com/in/anngineer) in regard to my work or future projects.
