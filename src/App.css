@@ -13,8 +13,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* Setting the base properties for the entire page */
@@ -25,13 +24,11 @@ body {
   color: #191919;
   font-size: 1rem;
   font-family: "Source Sans Pro", sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
   margin-left: auto;
-  margin-right: auto;
-  /*This will make it so when you click on a link, 
-    it will scroll to that spot rather than jump*/
+  margin-right: auto; /*This will make it so when you click on a link, 
+it will scroll to that spot rather than jump*/
 }
 
 .about,
@@ -62,21 +59,12 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #1e1e1e;
-  z-index: 500;
-  /*This makes sure that the nav is always visible on top of any other element*/
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  z-index: 500; /*This makes sure that the nav is always visible on top of any other element*/
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 /*------ Navbar CSS------ */
@@ -85,38 +73,26 @@ nav a {
   color: #f2f2f3;
   font-size: 1.2rem;
 }
-
 nav a:hover {
   color: #43b1b9;
   cursor: pointer;
 }
-
 nav #left-nav,
 nav #right-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 nav #left-nav {
   padding-left: 1rem;
 }
-
 nav #right-nav {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 45vw;
 }
-
 nav .fas {
   color: #f2f2f3;
   background-color: #1e1e1e;
 }
-
 nav #dropdown-button {
   color: #f2f2f3;
   font-size: 1.4rem;
@@ -129,24 +105,14 @@ nav #dropdown-button {
 /* -----------Phone Only Navbar (0px-599px)-----------*/
 @media (max-width: 599px) {
   .nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .nav #left-nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .nav #right-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
   }
   .nav #dropdown-button {
@@ -157,13 +123,8 @@ nav #dropdown-button {
   }
   /* this shows the menu, is gets added to div#right-nav when the side button is clicked */
   #right-nav.dropdown {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 0.3rem 1rem 0.3rem 0;
   }
   #right-nav a {
@@ -177,12 +138,10 @@ nav #dropdown-button {
     color: #43b1b9;
   }
 }
-
 /* ______________________________________________________________________ */
 /* ---------------------- BEGIN INTRO SECTION --------------------*/
 #introduction-section {
   padding-top: 3rem;
-  -webkit-transition: height 0.4s linear;
   transition: height 0.4s linear;
   height: 29rem;
   color: #242423;
@@ -195,23 +154,18 @@ nav #dropdown-button {
 
 /* This is a container holding the circle and its text */
 .intro-text-wrapper {
-  -webkit-transition: height 0.4s linear;
   transition: height 0.4s linear;
-  -webkit-transition: width 0.4s linear;
   transition: width 0.4s linear;
-  -webkit-transition: margin 0.4s linear;
   transition: margin 0.4s linear;
   height: 30rem;
   width: 29rem;
   padding: 10px;
   margin-top: 8rem;
   margin-left: 8rem;
-  border-radius: 100%;
-  /*This makes it a circle*/
+  border-radius: 100%; /*This makes it a circle*/
   display: block;
   background-color: #f39c74;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
-          box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
+  box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
   /* other colors I considered were #f6b597;,#f8b08f;, and #242423; */
 }
 
@@ -231,34 +185,21 @@ nav #dropdown-button {
     background-image: url("./images/background3smalld.jpg");
   }
   #introduction-section .intro-text-wrapper {
-    -webkit-transition: margin 0.4s linear;
     transition: margin 0.4s linear;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15vw;
     margin-bottom: 12vw;
-    -webkit-transition: height 0.4s linear;
     transition: height 0.4s linear;
-    -webkit-transition: width 0.4s linear;
     transition: width 0.4s linear;
     height: 300px;
     width: 300px;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
   #introduction-section h1 {
     margin-top: 0;
@@ -269,18 +210,14 @@ nav #dropdown-button {
     margin: 0.5rem;
   }
 }
-
 /* Iphone 0-350px */
 @media (max-width: 360px) {
   #introduction-section {
-    -webkit-transition: height 0.4s linear;
     transition: height 0.4s linear;
     height: 25rem;
   }
   #introduction-section .intro-text-wrapper {
-    -webkit-transition: height 0.4s linear;
     transition: height 0.4s linear;
-    -webkit-transition: width 0.4s linear;
     transition: width 0.4s linear;
     height: 75vw;
     width: 75vw;
@@ -299,16 +236,13 @@ nav #dropdown-button {
     font-weight: 450;
   }
 }
-
 @media (min-width: 600px) and (max-width: 899px) {
   #introduction-section .intro-text-wrapper {
-    -webkit-transition: margin 0.4s linear;
     transition: margin 0.4s linear;
     margin-left: auto;
     margin-right: auto;
   }
 }
-
 @media (min-width: 1200px) and (max-width: 1599px) {
   #introduction-section {
     position: relative;
@@ -321,10 +255,8 @@ nav #dropdown-button {
     bottom: -12rem;
   }
 }
-
 @media (min-width: 1600px) {
   #introduction-section {
-    -webkit-transition: height 0.4s linear;
     transition: height 0.4s linear;
     min-height: 47rem;
     height: 80vh;
@@ -345,7 +277,6 @@ nav #dropdown-button {
     font-size: 1.5rem;
   }
 }
-
 /*-------------------------END INTRO SECTION------------------------- */
 /* __________________________________________________________________ */
 /* __________________________________________________________________*/
@@ -416,50 +347,29 @@ nav #dropdown-button {
 
 /* Setting grid and divisions of grid */
 .portfolio-grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "one two three" "four five six";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "one two three" "four five six";
   grid-gap: 30px;
   justify-items: center;
 }
-
 .portfolio-grid .grid-item-1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: one;
 }
-
 .portfolio-grid .grid-item-2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: two;
 }
-
 .portfolio-grid .grid-item-3 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: three;
 }
-
 .portfolio-grid .grid-item-4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: four;
 }
-
 .portfolio-grid .grid-item-5 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: five;
 }
-
 .portfolio-grid .grid-item-6 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
   grid-area: six;
 }
 
@@ -474,14 +384,14 @@ nav #dropdown-button {
   text-align: center;
   padding: 1.3rem 1.3rem 1.5rem 1.3rem;
   background-color: #333333;
-  border-radius: 5px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
-          box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
 }
 
 .portfolio-example img {
   width: 100%;
   height: 11rem;
+  border-radius: 8px;
 }
 
 .portfolio-example img.show-on-hover {
@@ -491,7 +401,6 @@ nav #dropdown-button {
 .portfolio-example:hover img.hide-on-hover {
   display: none;
 }
-
 .portfolio-example:hover img.show-on-hover {
   display: inline-block;
 }
@@ -522,40 +431,26 @@ nav #dropdown-button {
     padding-top: 1rem;
   }
   #portfolio-section .portfolio-grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "one" "two" "three" "four" "five" "six";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "one" "two" "three" "four" "five" "six";
   }
   #portfolio-section .portfolio-grid .grid-item-1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: one;
   }
   #portfolio-section .portfolio-grid .grid-item-2 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: two;
   }
   #portfolio-section .portfolio-grid .grid-item-3 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
     grid-area: three;
   }
   #portfolio-section .portfolio-grid .grid-item-4 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
     grid-area: four;
   }
   #portfolio-section .portfolio-grid .grid-item-5 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
     grid-area: five;
   }
   #portfolio-section .portfolio-grid .grid-item-6 {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
     grid-area: six;
   }
   #portfolio-section .portfolio-example {
@@ -572,116 +467,81 @@ nav #dropdown-button {
     text-align: center;
   }
 }
-
 @media (min-width: 600px) and (max-width: 899px) {
   #portfolio-section .portfolio-grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "one two" "three four" "five six";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "one two" "three four" "five six";
   }
   #portfolio-section .portfolio-grid .grid-item-1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: one;
   }
   #portfolio-section .portfolio-grid .grid-item-2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
     grid-area: two;
   }
   #portfolio-section .portfolio-grid .grid-item-3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: three;
   }
   #portfolio-section .portfolio-grid .grid-item-4 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: four;
   }
   #portfolio-section .portfolio-grid .grid-item-5 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
     grid-area: five;
   }
   #portfolio-section .portfolio-grid .grid-item-6 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
     grid-area: six;
   }
   #portfolio-section .portfolio-example {
-    -webkit-transition: width 0.4s linear;
     transition: width 0.4s linear;
     max-width: 300px;
   }
 }
-
 @media (min-width: 900px) and (max-width: 1199px) {
   #portfolio-section .portfolio-example {
     max-width: 300px;
   }
 }
-
 @media (min-width: 1200px) and (max-width: 1599px) {
   #portfolio-section {
     position: relative;
   }
   #portfolio-section .portfolio-example {
-    -webkit-transition: width 0.4s linear;
     transition: width 0.4s linear;
     max-width: 350px;
   }
 }
-
 @media (min-width: 1600px) {
   #portfolio-section {
     position: relative;
   }
   #portfolio-section .portfolio-grid {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 40px;
-        grid-template-areas: "one two three four" "five six . .";
+    grid-template-areas: "one two three four" "five six . .";
   }
   #portfolio-section .portfolio-grid .grid-item-1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: one;
   }
   #portfolio-section .portfolio-grid .grid-item-2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
     grid-area: two;
   }
   #portfolio-section .portfolio-grid .grid-item-3 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
     grid-area: three;
   }
   #portfolio-section .portfolio-grid .grid-item-4 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 4;
     grid-area: four;
   }
   #portfolio-section .portfolio-grid .grid-item-5 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: five;
   }
   #portfolio-section .portfolio-grid .grid-item-6 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: six;
   }
   #portfolio-section p {
     font-size: 1.2rem;
   }
 }
-
 /*------------------------------------------------- Contact Me Section ----------------------------------------------------------------------------*/
 #contact-section {
   padding-bottom: 23.28px;
@@ -697,7 +557,6 @@ nav #dropdown-button {
   position: relative;
   display: inline-block;
   /* width: 70vw; */
-  -webkit-transition: width 0.4s linear;
   transition: width 0.4s linear;
   width: 72.5%;
   margin-top: 5rem;
@@ -740,16 +599,9 @@ nav #dropdown-button {
 
 /* the row of contact links */
 .link-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   width: 40%;
   margin: 1.3rem auto 2rem auto;
 }
@@ -760,13 +612,11 @@ nav #dropdown-button {
   font-size: 1.2rem;
   margin-bottom: 0.35rem;
 }
-
 #contact-section .fas,
 #contact-section .fab {
   color: #1e1e1e;
   background-color: #f8f8f9;
 }
-
 #contact-section a:active,
 #contact-section a:active .fab,
 #contact-section a:active .fas {
@@ -774,7 +624,6 @@ nav #dropdown-button {
   font-size: 1.2rem;
   margin-bottom: 0.35rem;
 }
-
 #contact-section a:hover,
 #contact-section a:hover .fab,
 #contact-section a:hover .fas {
@@ -797,13 +646,11 @@ nav #dropdown-button {
     font-size: 0.8rem;
   }
 }
-
 @media (min-width: 600px) and (max-width: 899px) {
   #contact-section p {
     font-size: 1.3rem;
   }
   #contact-section .link-box {
-    -webkit-transition: margin 0.4s linear;
     transition: margin 0.4s linear;
     margin-top: 1.5rem;
     width: 60%;
@@ -812,10 +659,8 @@ nav #dropdown-button {
     width: 93.5%;
   }
 }
-
 @media (min-width: 900px) and (max-width: 1199px) {
   #contact-section .contact-section-wrapper {
-    -webkit-transition: width 0.4s linear;
     transition: width 0.4s linear;
     width: 93.5%;
   }
@@ -823,20 +668,18 @@ nav #dropdown-button {
     width: 40%;
   }
 }
-
 @media (min-width: 1600px) {
   #contact-section .link-box {
     width: 35%;
   }
   /* This keeps the social media links from expanding too wide. */
 }
-
 #about-section {
   padding-bottom: 5rem;
   padding-top: 5rem;
   background-color: #1e1e1e;
   color: #f2f2f3;
-  color: #f2f2f3c7;
+  color: rgba(242, 242, 243, 0.7803921569);
   text-align: center;
 }
 
@@ -856,11 +699,9 @@ nav #dropdown-button {
   margin-left: auto;
   margin-right: auto;
 }
-
 .about-description .description-block-2 {
   margin-top: 2rem;
 }
-
 .about-description h3 {
   font-size: 1.5rem;
   padding: 0.3rem;
@@ -868,7 +709,6 @@ nav #dropdown-button {
   border-bottom: #e35615 solid 2px;
   margin-bottom: 0.5rem;
 }
-
 .about-description p {
   font-size: 1.2rem;
 }
@@ -881,13 +721,11 @@ nav #dropdown-button {
     font-size: 1rem;
   }
 }
-
 @media (max-width: 599px) {
   #about-section {
     padding-top: 1rem;
   }
 }
-
 /*---------------------------------------------------------- Footer section-------------------------------------------------------- */
 #footer {
   position: relative;
@@ -895,18 +733,15 @@ nav #dropdown-button {
   height: 7rem;
   color: #8d8d8f;
 }
-
 #footer .image-reference {
   text-align: right;
   padding: 2rem;
   line-height: 1.4;
 }
-
 #footer a {
   text-decoration: none;
   color: #8d8d8f;
 }
-
 #footer i {
   font-size: 0.7rem;
 }
@@ -916,16 +751,13 @@ nav #dropdown-button {
     font-size: 0.8rem;
   }
 }
-
 @media (max-width: 360px) {
   #footer .image-reference {
     font-size: 0.8rem;
   }
 }
-
 @media (min-width: 900px) and (max-width: 1199px) {
   #contact-section .contact-section-wrapper {
-    -webkit-transition: width 0.4s linear;
     transition: width 0.4s linear;
     width: 93.5%;
   }
@@ -933,10 +765,8 @@ nav #dropdown-button {
     width: 40%;
   }
 }
-
 @media (min-width: 1200px) and (max-width: 1599px) {
   #footer .image-reference {
     font-size: 1rem;
   }
-}
-/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */
