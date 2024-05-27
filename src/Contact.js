@@ -8,7 +8,7 @@ const Contact = () => {
         <p>if you would like to work together or discuss a project.</p>
 
         <div className="link-box">
-          <a href={"mailto:anngineer@gmail.com"}>
+          <a href={"mailto:anngineerdev@gmail.com"}>
             <i className="fas fa-envelope" alt="email icon"></i> Email
           </a>
           <a href={"https://github.com/Anngineer"}>

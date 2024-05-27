@@ -32,8 +32,8 @@ const Home = ({ dropDownVisible, setDropDownVisible }) => {
 
       <section id="introduction-section">
         <header className="intro-text-wrapper">
-          <h1>Hey there! I'm Ann Bridge,</h1>
-          <h2>web developer and researcher.</h2>
+          <h1>Hey there! I'm Ann Bridge.</h1>
+          <h2>Welcome to my web dev projects.</h2>
         </header>
       </section>
 

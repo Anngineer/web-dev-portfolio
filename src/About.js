@@ -65,19 +65,19 @@ const About = ({ dropDownVisible, setDropDownVisible }) => {
               <br />I am looking for freelance, part-time, and full-time work.
               If you would like to connect, please feel free to email me at{" "}
               <a
-                href={"mailto:anngineer@gmail.com"}
+                href={"mailto:anngineerdev@gmail.com"}
                 style={{ color: "#43b1b9" }}
               >
-                Anngineer@gmail.com
+                AnngineerDev@gmail.com
               </a>{" "}
-              and add me on&nbsp;
+              or add me on&nbsp;
               <a
                 href="www.linkedin.com/in/anngineer"
                 style={{ color: "#43b1b9" }}
               >
                 LinkedIn
               </a>
-              !
+              .
             </p>
           </div>
         </div>
