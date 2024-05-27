@@ -52,7 +52,8 @@ const About = ({ dropDownVisible, setDropDownVisible }) => {
           <div className="description-block-2">
             <h3>Ongoing</h3>
             <p>
-              While teaching myself back-end web development, I plan to contribute to open source projects on{" "}
+              While studying software engineering, I plan to contribute to open
+              source projects on{" "}
               <a
                 href="https://github.com/Anngineer"
                 style={{ color: "#43b1b9" }}
