@@ -47,7 +47,7 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
           duration={450}
           id="link-portfolio"
         >
-          contact
+          social
         </LinkScroll>
         <LinkToRoute to="/about">about</LinkToRoute>
       </div>
@@ -95,7 +95,7 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
             id="link-portfolio"
             onClick={() => closeDropDown()}
           >
-            contact
+            social
           </LinkScroll>
           <LinkToRoute to="/about" onClick={() => closeDropDown()}>
             about
@@ -127,7 +127,7 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
           duration={450}
           id="link-portfolio"
         >
-          contact
+          social
         </LinkScroll>
         <LinkToRoute
           to="/about"
@@ -170,7 +170,7 @@ const Nav = ({ location, dropDownVisible, setDropDownVisible }) => {
             id="link-portfolio"
             onClick={() => closeDropDown()}
           >
-            contact
+            social
           </LinkScroll>
           <LinkToRoute
             to="/about"

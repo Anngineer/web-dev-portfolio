@@ -4,12 +4,14 @@ const Contact = () => {
       <div className="contact-section-wrapper">
         <div className="contact-top contact-left"></div>
         <div className="contact-top contact-right"></div>
-        <h2>Send me a note</h2>
-        <p>if you would like to work together or discuss a project.</p>
+        <h2>Stay Updated</h2>
+        <p>Follow my latest projects and professional journey.</p>
 
         <div className="link-box">
-          <a href={"mailto:anngineerdev@gmail.com"}>
-            <i className="fas fa-envelope" alt="email icon"></i> Email
+          <a href={"https://anngineer.substack.com/"}>
+            <i className="fas fa-blog" alt="blog icon"></i>
+          
+           Blog
           </a>
           <a href={"https://github.com/Anngineer"}>
             <i className="fab fa-github" alt="GitHub icon"></i> GitHub
